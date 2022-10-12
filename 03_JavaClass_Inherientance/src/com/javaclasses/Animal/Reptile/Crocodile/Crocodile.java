@@ -11,7 +11,7 @@ public class Crocodile extends Reptile {
     }
 
     public Crocodile(int height, int weight, String animalType, String bloodType, String drySkin, String backBone,
-            String softShelledEggs) {
+            String softShelledEggs, String hardShelledEggs) {
         super(height, weight, animalType, bloodType, drySkin, backBone, softShelledEggs);
         this.hardShelledEggs = hardShelledEggs;
     }

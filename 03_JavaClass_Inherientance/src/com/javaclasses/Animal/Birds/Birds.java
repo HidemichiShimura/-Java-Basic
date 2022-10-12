@@ -3,15 +3,16 @@ package com.javaclasses.Animal.Birds;
 import com.javaclasses.Animal.Animal;
 
 public class Birds extends Animal {
-    private String animalsWithFeathers;
+    private boolean animalsWithFeathers;
     private boolean canFly;
 
     // Constructor
     public Birds() {
-        super();
+        animalsWithFeathers = true;
+        canFly = false;
     }
 
-    public Birds(int height, int weight, String animalType, String bloodType, String animalsWithFeathers,
+    public Birds(int height, int weight, String animalType, String bloodType, boolean animalsWithFeathers,
             boolean canFly) {
         super(height, weight, animalType, bloodType);
         this.animalsWithFeathers = animalsWithFeathers;
@@ -19,7 +20,7 @@ public class Birds extends Animal {
     }
 
     // GET
-    public String getAnimalsWithFeathers() {
+    public boolean getAnimalsWithFeathers() {
         return this.animalsWithFeathers;
     }
 
@@ -28,7 +29,7 @@ public class Birds extends Animal {
     }
 
     // SET
-    public void setAnimalsWithFeathers(String animalsWithFeathers) {
+    public void setAnimalsWithFeathers(boolean animalsWithFeathers) {
         this.animalsWithFeathers = animalsWithFeathers;
     }
 

@@ -8,6 +8,10 @@ public class Animal {
 
     // Constructor
     public Animal() {
+        this.height = 1;
+        this.weight = 50;
+        this.animalType = "";
+        this.bloodType = "B";
     }
 
     public Animal(int height, int weight, String animalType, String bloodType) {

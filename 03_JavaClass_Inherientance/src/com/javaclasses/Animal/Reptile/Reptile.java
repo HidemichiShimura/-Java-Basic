@@ -9,7 +9,9 @@ public class Reptile extends Animal {
 
     // Constructor
     public Reptile() {
-        super();
+        drySkin = "Unknown";
+        backBone = "Unknown";
+        softShelledEggs = "Unknown";
     }
 
     public Reptile(int height, int weight, String animalType, String bloodType, String drySkin, String backBone,

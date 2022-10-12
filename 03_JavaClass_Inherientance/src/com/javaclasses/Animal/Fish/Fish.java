@@ -8,7 +8,8 @@ public class Fish extends Animal {
 
     // Constructor
     public Fish() {
-        super();
+        liveInWater = true;
+        hasGills = true;
     }
 
     public Fish(int height, int weight, String animalType, String bloodType, boolean liveInWater, boolean hasGills) {

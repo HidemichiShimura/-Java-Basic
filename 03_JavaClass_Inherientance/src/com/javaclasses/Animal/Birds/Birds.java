@@ -1,4 +1,4 @@
-package com.javaclasses.Birds;
+package com.javaclasses.Animal.Birds;
 
 import com.javaclasses.Animal.Animal;
 
@@ -8,6 +8,7 @@ public class Birds extends Animal {
 
     // Constructor
     public Birds() {
+        super();
     }
 
     public Birds(int height, int weight, String animalType, String bloodType, String animalsWithFeathers,
@@ -22,6 +23,10 @@ public class Birds extends Animal {
         return this.animalsWithFeathers;
     }
 
+    public boolean getCanFly() {
+        return this.canFly;
+    }
+
     // SET
     public void setAnimalsWithFeathers(String animalsWithFeathers) {
         this.animalsWithFeathers = animalsWithFeathers;
@@ -29,9 +34,5 @@ public class Birds extends Animal {
 
     public void setCanFly(boolean canFly) {
         this.canFly = canFly;
-    }
-
-    public boolean isCanFly() {
-        return this.canFly;
     }
 }

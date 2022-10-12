@@ -1,4 +1,4 @@
-package com.javaclasses.Reptile;
+package com.javaclasses.Animal.Reptile;
 
 import com.javaclasses.Animal.Animal;
 
@@ -9,6 +9,7 @@ public class Reptile extends Animal {
 
     // Constructor
     public Reptile() {
+        super();
     }
 
     public Reptile(int height, int weight, String animalType, String bloodType, String drySkin, String backBone,

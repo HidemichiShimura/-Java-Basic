@@ -1,4 +1,4 @@
-package com.javaclasses.Fish;
+package com.javaclasses.Animal.Fish;
 
 import com.javaclasses.Animal.Animal;
 
@@ -8,12 +8,22 @@ public class Fish extends Animal {
 
     // Constructor
     public Fish() {
+        super();
     }
 
     public Fish(int height, int weight, String animalType, String bloodType, boolean liveInWater, boolean hasGills) {
         super(height, weight, animalType, bloodType);
         this.liveInWater = liveInWater;
         this.hasGills = hasGills;
+    }
+
+    // GET
+    public boolean LiveInWater() {
+        return this.liveInWater;
+    }
+
+    public boolean HasGills() {
+        return this.hasGills;
     }
 
     // SET
